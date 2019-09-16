@@ -1,8 +1,8 @@
 var dog = require('./dogBark.js');
 var argv2 = process.argv[2];
 var argv3 = process.argv[3];
-var taidi = dog.taidi;
-var zangao = dog.zangao;
+var taidi;
+var zangao;
 
 if (argv2 == undefined || argv3 == undefined) {
     console.log("请输入命令行参数");
