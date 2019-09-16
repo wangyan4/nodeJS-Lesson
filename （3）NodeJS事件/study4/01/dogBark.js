@@ -3,6 +3,7 @@ var EventEmitter = events.EventEmitter;
 
 
 function Dog(dogName, enery) {
+    EventEmitter.call(this);
     this.dogName = dogName;
     this.enery = enery;
     var timer = setInterval(function () {

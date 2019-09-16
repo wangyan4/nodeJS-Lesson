@@ -4,6 +4,7 @@ const util = require('util');
 const EventEmitter = events.EventEmitter;
 
 function radio(name,fm){
+    EventEmitter.call(this);
     this.name = name;
     this.fm = fm;
     setTimeout(function(){
